@@ -1,0 +1,115 @@
+*{
+    margin:0;
+    padding:0;
+    text-decoration: none;
+    list-style: none;
+}
+
+.container{   background:linear-gradient(135deg, rgba(119, 244, 10, 0.2),
+    rgba(232, 88, 16, 0.6));
+    width: 100%;
+   min-height: 100vh;
+padding-bottom: 30px;
+}
+.container h4{
+    padding-top:40px;
+    text-align: center;
+
+}
+.app{width:70%;
+    max-width: 450PX;
+    background:blue;
+    min-height:30vh;
+    margin: 20px auto 10px;
+    padding:10px 20px;
+    border-radius: 5px;
+}
+.app form{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+
+}
+.app form input{
+    background: white;
+    color:brown;
+    border: none;
+    outline: none;
+    padding:10px 20px;
+    border-radius: 4px;
+    flex:1;
+}
+.app form button{
+    border: none;
+    outline: none;
+    padding:10px 20px;
+    border-radius: 4px;
+    margin-left:10px;
+    background: green;
+    color:white;
+    cursor: pointer;
+}
+
+.app-list{
+    margin: 25px auto 5px;
+}
+.app-list li{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:10px;
+}
+.app-list h5{
+    background:black;
+    color:yellow;
+    padding:8px 15px;
+    border-radius: 4px;
+    flex:1;
+}
+
+.app-icon{
+  display:flex;
+  justify-content: space-between;
+
+}
+.app-icon i{
+    padding: 5px 10px;
+    margin:0 8px;
+    cursor: pointer;
+}
+i.edit{
+    color:hotpink;
+}
+i.delete{
+    color: red;
+}
+
+
+
+@media screen and (max-width:450px){
+    .app{width:80%;
+        max-width: 400px;
+        background:blue;
+        min-height:30vh;
+        margin: 20px auto 5px;
+        padding:10px 20px;
+    
+    }
+.app form input{
+
+    padding:8px 10px;
+    border-radius: 4px;
+
+}
+.app form button{
+
+    padding:8px 10px;
+    border-radius: 4px;
+    margin-left:10px;
+} 
+.app-icon i{
+    padding:0 5px;
+    margin:0 8px;
+
+}
+}
