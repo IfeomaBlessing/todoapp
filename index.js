@@ -1,6 +1,7 @@
 let form = document.getElementById('form');
 let input = document.getElementById('input');
 let appList = document.getElementById('app-list');
+let container = document.querySelector('.container');
 
 form.addEventListener("submit", function(e){
   e.preventDefault();
@@ -27,6 +28,11 @@ let acceptData =()=>{
     console.log(data);
     // TO ACCEPT DATA( THE VALUE ENTERED IN THE INPUT SPACE)
 // WHICH IS NOW INVOKED IN THE SUCCESS VALIDATION
+
+appList.style.display ="block";
+container.style.paddingBottom ="30px";
+// CONTENT REPRESENT THE KEY
+//DATA REPRESENT THE OBJECT WHICH IS "inputContent"
 createData();
 };
 
@@ -43,6 +49,8 @@ let createData =()=>{
 };
 
 
+
+
 let deletePost =(e)=>{
   e.parentElement.parentElement.remove();  //the first parentelement is to target the whole icons(app-icon)
   // the second parentelement targets the whole list
@@ -52,3 +60,4 @@ let editPost=(e)=>{
     input.value = e.parentElement.previousElementSibling.innerHTML;
     e.parentElement.parentElement.remove();
 };
+

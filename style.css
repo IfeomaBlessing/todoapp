@@ -9,17 +9,17 @@
     rgba(232, 88, 16, 0.6));
     width: 100%;
    min-height: 100vh;
-padding-bottom: 30px;
+padding-bottom:0px;
+
 }
 .container h4{
-    padding-top:40px;
+    padding-top:80px;
     text-align: center;
 
 }
 .app{width:70%;
-    max-width: 450PX;
+    width: 450PX;
     background:blue;
-    min-height:30vh;
     margin: 20px auto 10px;
     padding:10px 20px;
     border-radius: 5px;
@@ -52,6 +52,7 @@ padding-bottom: 30px;
 
 .app-list{
     margin: 25px auto 5px;
+    display:none;
 }
 .app-list li{
     display:flex;
@@ -87,6 +88,11 @@ i.delete{
 
 
 @media screen and (max-width:450px){
+    .container h4{
+        padding-top:40px;
+
+    
+    }
     .app{width:80%;
         max-width: 400px;
         background:blue;
